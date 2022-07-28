@@ -1,0 +1,288 @@
+/* VARIABLES */
+
+:root{
+  --main-text-color : #fff;
+  --main-bg-color : #fff;
+  --main-bg-colorFFA97A:#FFA97A;
+  --main-bg-color293241: #293241;
+  --main-bg-color182228: #182228;
+  --main-font-family:"Jost", "Arial", sans-serif;
+  /* --main-font-size : 16px; */
+  /* --main-font-weight : 400; */
+  /* --main-line-height : 1.5; */
+}
+/* jost-600 - latin_cyrillic */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+  url('../fonts/jost-v14-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/jost-v14-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* jost-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+  url('../fonts/jost-v14-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/jost-v14-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* jost-800 - latin_cyrillic */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+  url('../fonts/jost-v14-latin_cyrillic-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/jost-v14-latin_cyrillic-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+  url('../fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+  url('../fonts/inter-v12-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/inter-v12-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+  url('../fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-800 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+  url('../fonts/inter-v12-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/inter-v12-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* GENERAL */
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  height: auto;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", "Arial", sans-serif;
+  
+  /* font-size: 16px; */
+  /* font-weight: 400; */
+  /* line-height: var(--main-line-height); */
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li{
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+}
+span{
+  display: inline-block;
+}
+image{
+  display: inline-block;
+}
+svg{
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+}
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container{
+  max-width: 970px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+
+.site-main{
+  flex-grow: 1;
+  background-color: #232C41;
+}
+
+/* SITE-HEADER START  */
+
+.site-header {
+  padding: 27px 0;
+  background-color: #17232b;
+}
+.site-header__parent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header__child{
+  display: flex;
+  align-items: center;
+}
+.site-header__link {
+  background-color: #fff;
+}
+/* .site-header__logo {
+}
+.site-header__box {
+}
+.sitenav {
+} */
+.sitenav__list {
+  display: flex;
+  align-items: center;
+}
+.sitenav__item {
+  margin-left: 34px;
+}
+.sitenav__item:nth-child(1){
+  margin-left: 0;
+}
+.sitenav__link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+/* .sitenav__link:nth-child(1){
+  color: #FFA97A;
+} */
+.btn{
+  margin-left: 110px;
+  border: none;
+  background-color: transparent;
+}
+/* HERO SECTION START  */
+
+.hero {
+  padding-top: 46px;
+}
+.hero__heading {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 32px;
+  letter-spacing: 2.2px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 40px;
+}
+.hero__boxing {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero__text {
+  font-weight: 600;
+  line-height: 32px;
+}
+.hero__text--white {
+  margin-bottom: 15px;
+  font-size: 17px;
+  color: var(--main-bg-color);
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+.hero__text--purple {
+  margin-bottom: 26px;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  color: var(--main-bg-colorFFA97A);
+  text-align: center;
+}
+.hero__box {
+  display: flex;
+  margin-bottom: 26px;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__img{
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero__link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+.hero__link--white{
+  padding: 10px 14px;
+  color: #FFFFFF;
+  border: 1px solid #FFA97A;
+  border-radius: 5px;
+}
+.hero__link--purple{
+  padding: 10px 33px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #293241;
+  background: #FFA97A;
+  border-radius: 5px;
+}
+/* .hero__img {
+} */
+.svg{
+  color: #17232b;
+}
